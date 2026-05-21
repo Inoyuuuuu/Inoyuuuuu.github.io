@@ -53,7 +53,7 @@ main {
 }
 
 #movable-card-container {
-    margin-top: 70px;
+    margin-top: 50px;
     width: 100%;
     height: 700px;
     /* border: 2px solid red; */
@@ -86,10 +86,8 @@ main {
 
 #main-card {
     border: 4px solid var(--secondary-accent-color);
-    width: 170px;
-    height: 90px;
-    margin-top: 375px; /* depends on middle of movable-card-container and own hight*/
-    position: absolute;
+    width: 200px;
+    margin-top: 8%;
     font-size: var(--big-font-size);
 }
 
@@ -117,7 +115,6 @@ main {
     min-height: 80px;
     max-width: 350px;
     padding: 30px;
-    font-size: var(--small-font-size);
 }
 
 #inspirocard img {
@@ -130,7 +127,7 @@ main {
     border: none;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 15px;
+    margin-top: 0px;
     text-align: center;
     font-size: var(--primary-font-size);
     color: var(--dark-bg-color);
