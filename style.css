@@ -3,7 +3,7 @@
     --dark-bg-color: #202225;
     --dark-bg-color-hover: #5e646d;
     --primary-accent-color: #4bf3ff;
-    --primary-accent-color-hover: #37b9c2;
+    --primary-accent-color-hover: #2fa0a8;
     --secondary-accent-color: #4e0dff;
 
 
@@ -26,6 +26,7 @@ header {
     text-align: left;
     font-size: var(--big-font-size);
     color: var(--primary-font-color);
+    z-index: 999;
 }
 
 header h1{
@@ -47,15 +48,10 @@ main {
     justify-content: left;
 }
 
-#static-card-container {
-    display: flex;
-    justify-content: center;
-}
-
 #movable-card-container {
-    margin-top: 70px;
+    margin-top: 20px;
     width: 100%;
-    height: 700px;
+    height: 90vh;
     /* border: 2px solid red; */
 }
 
@@ -88,7 +84,6 @@ main {
     border: 4px solid var(--secondary-accent-color);
     width: 170px;
     height: 90px;
-    margin-top: 375px;
     position: absolute;
     font-size: var(--big-font-size);
 }
@@ -125,11 +120,14 @@ main {
 }
 
 #inspirocard button{
+    margin-top: 0px;
+}
+
+button{
     background-color: var(--primary-accent-color);
     border: none;
     border-radius: 8px;
     padding: 20px;
-    margin-top: 0px;
     text-align: center;
     font-size: var(--primary-font-size);
     color: var(--dark-bg-color);
@@ -137,6 +135,6 @@ main {
     cursor: pointer;
 }
 
-#inspirocard button:hover{
+button:hover{
     background-color: var(--primary-accent-color-hover);
 }
