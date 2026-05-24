@@ -2,6 +2,12 @@ let currentAngleOffset = Math.random() * 360;
 let currentRadius = 300;
 
 window.onload = function() {
+    initSite();
+};
+
+window.addEventListener("resize", initSite);
+
+function initSite() {
     const movableCardContainer = document.getElementById('movable-card-container');
     const movableCards = document.querySelectorAll('.movable');
 
@@ -10,7 +16,7 @@ window.onload = function() {
     currentRadius = (movableCardContainer.offsetHeight / 2) - (findCardWithGreatestHeight(movableCards) / 2);
     
     arrangeCardsInCircle(movableCardContainer, movableCards, currentRadius, currentAngleOffset);
-};
+}
 
 function arrangeCardsInCircle(movableCardContainer, movableCards, radius, angleOffset) {
     let amountCards = movableCards.length;
